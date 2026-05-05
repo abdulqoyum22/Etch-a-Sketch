@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 950px;
+    height: auto;
+    border: 2px solid #333;
+    flex: auto;
+}
+
+.container div {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 5px;
+    margin-bottom: 20px;
+}
