@@ -1,19 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 950px;
-    height: auto;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
     border: 2px solid #333;
-    flex: auto;
 }
 
 .container div {
-    width: 25px;
-    height: 25px;
+    box-sizing: border-box;
     border: 1px solid black;
+    opacity: 0.1;
 }
 
-button {
-    padding: 5px;
-    margin-bottom: 20px;
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bttn {
+    padding: 15px 80px;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    background-color: sienna;
+    color: whitesmoke;
+    border-color: whitesmoke;
+    font-size: 20px;
 }

@@ -4,10 +4,15 @@ const container = document.querySelector(".container");
 function createGrid(size) {
     container.textContent = '';
 
+    const squareSize = 600 / size;
+
     for (let i = 0; i < size * size; i++) {
         const square = document.createElement("div");
         container.appendChild(square);
         square.classList.add('square');
+
+        square.style.width = `${squareSize}px`;
+        square.style.height = `${squareSize}px`;
 
         function getRandomRGB() {
             const r = Math.floor(Math.random() * 256); // 0 to 255
